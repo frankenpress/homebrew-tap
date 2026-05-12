@@ -5,21 +5,21 @@
 class Fp < Formula
   desc "FrankenPress designer-promotion CLI"
   homepage "https://github.com/frankenpress/fp"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frankenpress/fp/releases/download/v0.1.0/fp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4ddbb7d053c1c1f1afbdf7af0ac9e79b91ef157b7e0ddff70b9155bc1b42bb10"
+      url "https://github.com/frankenpress/fp/releases/download/v0.1.1/fp_0.1.1_darwin_amd64.tar.gz"
+      sha256 "08b309ad1cffc483f5387502a257f8b40eeeec704256616a4aaf5efbab04dbbc"
 
       define_method(:install) do
         bin.install "fp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frankenpress/fp/releases/download/v0.1.0/fp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "862d8724d9d6d98491e3fb4a75052184a5183014d9e6291cdab8d7319da11f99"
+      url "https://github.com/frankenpress/fp/releases/download/v0.1.1/fp_0.1.1_darwin_arm64.tar.gz"
+      sha256 "f2e2e06cfcf8236fe1ea01099effd53a7c47d101582e6a8279b16a53ac473a33"
 
       define_method(:install) do
         bin.install "fp"
@@ -29,15 +29,15 @@ class Fp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frankenpress/fp/releases/download/v0.1.0/fp_0.1.0_linux_amd64.tar.gz"
-      sha256 "caf323a7f82275171ace49d72e952a61b41ae9bc1d0a2b8b72eafc8429b29cc4"
+      url "https://github.com/frankenpress/fp/releases/download/v0.1.1/fp_0.1.1_linux_amd64.tar.gz"
+      sha256 "9c57fb33530e0f60daebede4b37328ecc67f76981441308cc7b725d8676cccac"
       define_method(:install) do
         bin.install "fp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frankenpress/fp/releases/download/v0.1.0/fp_0.1.0_linux_arm64.tar.gz"
-      sha256 "40983b65ce39b69aca9156b82a284f1502e1e9088df456f8e734fb48af7b3807"
+      url "https://github.com/frankenpress/fp/releases/download/v0.1.1/fp_0.1.1_linux_arm64.tar.gz"
+      sha256 "c4dc5873baf49d1138e899e5fad6d56b0b16c0fae2ba9bcebde130f8133efdc6"
       define_method(:install) do
         bin.install "fp"
       end
